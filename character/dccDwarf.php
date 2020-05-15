@@ -490,7 +490,7 @@
             "reflex": <?php echo $reflexBase ?> + agilityMod + adjustRef(birthAugur, luckMod),
             "fort": <?php echo $fortBase ?> + staminaMod + adjustFort(birthAugur,luckMod),
             "will": <?php echo $willBase ?> + personalityMod + adjustWill(birthAugur, luckMod),
-            "initiative": <?php echo $level ?> + agilityMod + adjustInit(birthAugur, luckMod)
+            "initiative": agilityMod + adjustInit(birthAugur, luckMod)
 
 		};
 	    if(dwarfCharacter.hitPoints <= 0 ){
